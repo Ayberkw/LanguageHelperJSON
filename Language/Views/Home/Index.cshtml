@@ -1,0 +1,14 @@
+﻿@using Language.Helpers;
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <button>@LanguageHelper.GetTranslation("hello","tr")</button>
+    <button>@LanguageHelper.GetTranslation("hello","fr")</button>
+    <button>@LanguageHelper.GetTranslation("hello","en")</button>
+    <button>@LanguageHelper.GetTranslation("good","tr")</button>
+    <button>@LanguageHelper.GetTranslation("good","es")</button>
+    <button>@LanguageHelper.GetTranslation("bad","tr")</button>
+</div>
